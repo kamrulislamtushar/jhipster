@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jhipsterpractice.app"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "monolith",
+    "baseName": "jhipsterPractice",
+    "packageName": "com.jhipsterpractice.app",
+    "packageFolder": "com/jhipsterpractice/app",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OTMzM2E3ZTI0NTIwNTc5YzAxNDJmNDQxMTA5MzMwMGQ5NTNhMTg5MjVjNWMwN2Q4OGY3ZWZjMWVjNjMwYjc5OTcyNTZiZDkwZTQxYmExMGVjZTE0ZjM2MjdhYWEyMmQ0NTUyMmZlZGVjMDBiMTE5MmVhNDE2NDUzZDQ3YjA0Y2M=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1592387031433,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
