@@ -1,0 +1,114 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-kcp-heading">Create or edit a KCP</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_login">Login</label>
+                    <input type="text" class="form-control" name="login" id="field_login"
+                           formControlName="login"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_password">Password</label>
+                    <input type="text" class="form-control" name="password" id="field_password"
+                           formControlName="password"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_firstName">First Name</label>
+                    <input type="text" class="form-control" name="firstName" id="field_firstName"
+                           formControlName="firstName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_lastName">Last Name</label>
+                    <input type="text" class="form-control" name="lastName" id="field_lastName"
+                           formControlName="lastName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_email">Email</label>
+                    <input type="text" class="form-control" name="email" id="field_email"
+                           formControlName="email"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_activated">Activated</label>
+                    <input type="checkbox" class="form-control" name="activated" id="field_activated"
+                           formControlName="activated"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_langKey">Lang Key</label>
+                    <input type="text" class="form-control" name="langKey" id="field_langKey"
+                           formControlName="langKey"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_imageUrl">Image Url</label>
+                    <input type="text" class="form-control" name="imageUrl" id="field_imageUrl"
+                           formControlName="imageUrl"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_activationKey">Activation Key</label>
+                    <input type="text" class="form-control" name="activationKey" id="field_activationKey"
+                           formControlName="activationKey"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_resetKey">Reset Key</label>
+                    <input type="text" class="form-control" name="resetKey" id="field_resetKey"
+                           formControlName="resetKey"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_resetDate">Reset Date</label>
+                    <div class="input-group">
+                        <input id="field_resetDate" type="text" class="form-control" name="resetDate" ngbDatepicker #resetDateDp="ngbDatepicker" formControlName="resetDate"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="resetDateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_designation">Designation</label>
+                    <input type="text" class="form-control" name="designation" id="field_designation"
+                           formControlName="designation"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_nid">Nid</label>
+                    <input type="text" class="form-control" name="nid" id="field_nid"
+                           formControlName="nid"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_company">Company</label>
+                    <input type="text" class="form-control" name="company" id="field_company"
+                           formControlName="company"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

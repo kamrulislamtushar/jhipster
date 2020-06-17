@@ -1,0 +1,82 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="kCP">
+            <h2><span>KCP</span> {{ kCP.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Login</span></dt>
+                <dd>
+                    <span>{{ kCP.login }}</span>
+                </dd>
+                <dt><span>Password</span></dt>
+                <dd>
+                    <span>{{ kCP.password }}</span>
+                </dd>
+                <dt><span>First Name</span></dt>
+                <dd>
+                    <span>{{ kCP.firstName }}</span>
+                </dd>
+                <dt><span>Last Name</span></dt>
+                <dd>
+                    <span>{{ kCP.lastName }}</span>
+                </dd>
+                <dt><span>Email</span></dt>
+                <dd>
+                    <span>{{ kCP.email }}</span>
+                </dd>
+                <dt><span>Activated</span></dt>
+                <dd>
+                    <span>{{ kCP.activated }}</span>
+                </dd>
+                <dt><span>Lang Key</span></dt>
+                <dd>
+                    <span>{{ kCP.langKey }}</span>
+                </dd>
+                <dt><span>Image Url</span></dt>
+                <dd>
+                    <span>{{ kCP.imageUrl }}</span>
+                </dd>
+                <dt><span>Activation Key</span></dt>
+                <dd>
+                    <span>{{ kCP.activationKey }}</span>
+                </dd>
+                <dt><span>Reset Key</span></dt>
+                <dd>
+                    <span>{{ kCP.resetKey }}</span>
+                </dd>
+                <dt><span>Reset Date</span></dt>
+                <dd>
+                    <span>{{ kCP.resetDate }}</span>
+                </dd>
+                <dt><span>Designation</span></dt>
+                <dd>
+                    <span>{{ kCP.designation }}</span>
+                </dd>
+                <dt><span>Nid</span></dt>
+                <dd>
+                    <span>{{ kCP.nid }}</span>
+                </dd>
+                <dt><span>Company</span></dt>
+                <dd>
+                    <span>{{ kCP.company }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/kcp', kCP.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "login",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "activated",
+      "fieldType": "Boolean",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "langKey",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "imageUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activationKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resetKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resetDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "designation",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "nid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "company",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    }
+  ],
+  "changelogDate": "20200617101006",
+  "dto": "yes",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "jhi_user",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}
